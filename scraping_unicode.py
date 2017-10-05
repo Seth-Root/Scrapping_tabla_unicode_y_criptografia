@@ -12,9 +12,6 @@ try:
 except:
     crear_LISTA_unicode = subprocess.call("touch lista_en.txt", shell=True)
     f=open("lista_en.txt","w")
-    f.write(str(lista_unicode))
-    f.close()
-    f=open("lista_en.txt")
     lista_bajada =  f.read()
     f.close()
 
